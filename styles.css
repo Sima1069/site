@@ -1,0 +1,556 @@
+/* ПРАВИЛА:
+1. Cтили от преподавателя (светятся ярко) нельзя изменять!
+2. Стили, отмеченные зеленым цветом (закомментированные),нужно вписать самостоятельно  с указанием нужного значения */
+ 
+/* занятие 1 - секция 1 (ХЕДЕР) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ 
+ul {
+    list-style: none;
+}
+ 
+header {
+    height: 100vh;
+    background-image: url(./img/fon-siniy-goluboy-biryuzovyy.jpg);
+    background-repeat: repeat-x;
+    background-size: 101%;
+    background-position: center;
+    text-align: center;
+    color: rgb(17, 17, 17);
+}
+ 
+ 
+.site-nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: fixed;
+    top: 30px;
+    background-color: rgb(97, 223, 240);
+    z-index: 3;
+ 
+}
+ 
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: large;
+    color: black;
+}
+ 
+.nav-list {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+ 
+}
+ 
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #7e7c7e;
+    transition: .6s;
+    position: relative;
+    padding: 5px;
+}
+ 
+.nav-link:hover {
+    color: #000000;
+    font-size: 16px;
+}
+ 
+.nav-link:hover::after {
+ 
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #1ab798;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+ 
+.main-title {
+    padding-top: 300px;
+    font-size: xx-large;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-bottom: auto;
+    color: rgb(8, 6, 6);
+}
+ 
+.intro {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 21px;
+    color: blanchedalmond;
+}
+
+/* занятие №2 - секция №2 */
+ 
+ 
+.section-header {
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #1ab798;
+    padding-top: 60px;
+    margin-bottom: 32px; 
+}
+ 
+.section-header::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #babdc1;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    z-index: -1;
+}
+ 
+.section-header::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #babdc1;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    z-index: -1;
+}
+ 
+.features-item::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    left: -50px;
+    top: 30px;
+    padding-right: 30px;
+    z-index: -1;
+}
+ 
+.features-item:nth-of-type(1)::before {
+    background-image: url(./img/pic1.png);
+   }
+ 
+.features-item:nth-of-type(2)::before {
+    background-image: url(./img/pic3.jpg);
+   }
+ 
+.features-item:nth-of-type(3)::before {
+    background-image: url(./img/icon4.png);
+   }
+ 
+.features-item:nth-of-type(4)::before {
+    background-image: url(./img/pic2.png);
+   }
+ 
+.features-item:nth-of-type(5)::before {
+    background-image: url(./img/icon6.png);
+   }
+ 
+.features-item:nth-of-type(6)::before {
+    background-image: url(./img/pic4.jpg);
+  }
+ 
+ 
+ 
+.features-item-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+ 
+ 
+ 
+.features-intro-text {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+ 
+.features-list {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+ 
+.features-item {
+    width: 35%;
+    margin-bottom: auto;
+    padding-left: 50px;
+    margin-bottom: 100px;
+    
+}
+ 
+.features-item-text {
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    
+}
+
+
+
+
+
+
+ /* занятие 4 - секция 3 */
+.video-section {
+    height: 440px;
+    background-color: #1ab798;
+    position: relative;
+}
+ 
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 93%;
+}
+ 
+.video {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ 
+.video-title {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+   text-emphasis-color: black;
+    text-align: left;
+    padding-top: 120px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+ 
+.video-intro {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    text-emphasis-color: black;
+    width: 40%;
+    margin-bottom: 24px;
+    font-size: large;
+    line-height: 26px;
+}
+ 
+
+
+
+
+/* занятие 4 - секция 4 */
+ 
+.ceo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.ceo {
+    width: 100px;
+    margin-bottom: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+ 
+.ceo-photo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height:auto;
+ }
+ 
+.wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+ 
+.ceo-name {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+ 
+.ceo-info {
+    text-align: center;
+    font-size: 13px;
+    color: #b5b5b5;
+    margin-bottom: 100px;
+}
+ 
+.ceo-quote {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 50px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    color: #282528;
+}
+ 
+.ceo-quote::before {
+    content: '';
+    width: 100%;
+    height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+  font-size: 150px;
+    position: absolute;
+    top: 20px;
+    left: -45px;
+    color: #babdc175;
+    background: linear-gradient(to right, rgb(97, 223, 240), white);
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+/* занятие 5 - секция 5 */
+
+.team-intro {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-bottom: 100px;
+}
+ 
+.team-list {
+    width: 92%;
+    margin: auto;
+}
+ 
+.team-member {
+    position: relative;
+    width: 270px;
+}
+ 
+.member-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    transition: .6s;
+}
+ 
+.member-position {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+}
+ 
+.member-photo {
+    width: 270px;
+    height: auto;
+    display: block;
+    margin: unset;
+    z-index: 1;
+}
+ 
+.overflow {
+    width: 270px;
+    height: 300px;
+    overflow: hidden;
+}
+ 
+.hover-box {
+    display: none;
+    width: 270px;
+    height: 300px;
+    background-color: rgb(97, 223, 240)f;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .6s;
+    z-index: 1;
+    opacity: 500;
+}
+ 
+.team-member:hover .hover-box {
+    display: block;
+    box-shadow: aqua;
+    box-shadow: 0px 0px 17px #1ab798;
+}
+ 
+.team-member:hover .member-name {
+    color: #1ab798;
+    font-size: 24px;
+}
+ 
+ 
+.social-links {
+    display: flex;
+    justify-content: center;
+    height: 280px;
+    align-items: flex-end;
+}
+ 
+.member-social-link {
+    display: inline-block;
+    width: 43px;
+    height: 42px;
+    margin: 4px;
+    background-color: #4b4b4bab;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 5px;
+}
+ 
+ 
+.member-social-link:nth-of-type(1) {
+ background-image: url(./img/facebook.png);
+}
+.member-social-link:nth-of-type(2) {
+    background-image: url(./img/linkedin.png);
+}
+ 
+.member-social-link:nth-of-type(3) {
+    background-image: url(./img/twitter.png);
+}
+ 
+.team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+/* занятие 6 - секция 6 (ФУТЕР) */
+.contacts-section {
+    
+    background-image: url(./img/footer.png);
+   background-color: rgb(0, 0, 0);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+ 
+.white-header {
+   color: cadetblue;
+    margin-bottom: 60px;
+}
+ 
+ 
+.footer-text {
+    width: 40%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #808080c7;
+    margin: 0 auto 40px auto;
+}
+ 
+.footer-link {
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50px;
+    margin: 5px;
+}
+ 
+.footer-link:nth-of-type(1) {
+   background-image: url(./img/facebook.png);
+   background-color: #3b5997;
+}
+ 
+.footer-link:nth-of-type(2) {
+    background-image: url(./img/linkedin.png);
+    background-color: #3ec2f3;
+}
+ 
+.footer-link:nth-of-type(3) {
+    background-image: url(./img/twitter.png);
+    background-color: #007ab9;
+}
+ 
+.footer-socials {
+    margin-bottom: 40px;
+}
+ 
+.phone {
+    color: #bface2;
+    margin-bottom: 12px;
+}
+ 
+.mail {
+    color: #bface2;
+    margin-bottom: 50px;
+}
+ 
+hr {
+    margin-bottom: 25px;
+}
+ 
+.copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 10px;
+    color: #fffdfdc7;
+}
+ 
+.copyright {
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+
+
